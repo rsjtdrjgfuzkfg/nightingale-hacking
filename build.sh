@@ -77,7 +77,7 @@ case $OSTYPE in
         depdate="20130316"
         fname="$depdirn-$version-$depdate-$build-final.tar.lzma"
 
-        export CXXFLAGS="-O2 -fomit-frame-pointer -Wno-delete-non-virtual-dtor -Wno-unused-but-set-variable $CXXFLAGS $CPPFLAGS"
+        export CXXFLAGS="-O2 -fomit-frame-pointer -Wno-delete-non-virtual-dtor -Wno-unused-but-set-variable -D_GLIBCXX_USE_CXX11_ABI=0 $CXXFLAGS $CPPFLAGS"
 
         echo "linux $arch"
         ( cd dependencies && {

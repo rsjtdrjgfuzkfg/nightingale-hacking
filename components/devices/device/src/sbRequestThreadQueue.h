@@ -84,6 +84,7 @@ public:
     typedef RequestItems::size_type size_type;
     typedef RequestItems::reference reference;
     typedef RequestItems::const_reference const_reference;
+    typedef RequestItems::value_type value_type;
 
     Batch();
     ~Batch();
